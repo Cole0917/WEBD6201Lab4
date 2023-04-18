@@ -5,6 +5,33 @@ Date: 2023-04-16
 
 "use strict";
 (function () {
+    
+// const { MongoClient, ServerApiVersion } = require('mongodb');
+// const uri = "mongodb+srv://nathanmcquaid1996:nQ2OOuabaSSvBYX8@webd6201.sipyiq7.mongodb.net/?retryWrites=true&w=majority";
+
+// // Create a MongoClient with a MongoClientOptions object to set the Stable API version
+// const client = new MongoClient(uri, {
+//   serverApi: {
+//     version: ServerApiVersion.v1,
+//     strict: true,
+//     deprecationErrors: true,
+//   }
+// });
+
+// async function run() {
+//   try {
+//     // Connect the client to the server	(optional starting in v4.7)
+//     await client.connect();
+//     // Send a ping to confirm a successful connection
+//     await client.db("admin").command({ ping: 1 });
+//     console.log("Pinged your deployment. You successfully connected to MongoDB!");
+//   } finally {
+//     // Ensures that the client will close when you finish/error
+//     await client.close();
+//   }
+// }
+// run().catch(console.dir);
+
     function AuthGuard() {
         let protected_routes = [
             "contact-list"
@@ -430,7 +457,10 @@ Date: 2023-04-16
         LoadHeader();
         LoadLink("home");
         LoadFooter();
+        
     }
     window.addEventListener("load", Start);
+
+    
 })();
 //# sourceMappingURL=app.js.map
